@@ -37,7 +37,7 @@
 - 已安装 [Horae](https://github.com/zhaohang1205/horae) CLI 工具：
 
   ```bash
-  cargo install --git https://github.com/zhaohang1205/horae.git --rev 805dd02f72654d36d6a21d5f2a5a94b475665d8b
+  cargo install --git https://github.com/zhaohang1205/horae.git --rev e027536daeea14265e539e68336c6261e8dbaa15
   ```
 
 ## 安装与配置
