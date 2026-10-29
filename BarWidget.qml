@@ -1403,7 +1403,7 @@ BarWidget {
                 tooltipText: root.i18n("调用 Omarchy 默认终端执行 cargo install", "Open Omarchy terminal and run cargo install")
                 onClicked: {
                   if (root.bar) {
-                    var script = "echo '==> Installing Horae CLI via Cargo...'; cargo install --git https://github.com/zhaohang1205/horae.git --rev e027536daeea14265e539e68336c6261e8dbaa15 && echo -e '\\n✅ Horae installed successfully! Press Enter to close this window.' || (echo -e '\\n❌ Installation failed. Please check your Rust environment.'; read -n 1 -s -r -p 'Press any key to close...'); read dummy"
+                    var script = "echo '==> Installing Horae CLI via Cargo...'; cargo install --git https://github.com/zhaohang1205/horae.git --rev b6a88f7fdfd9009738665b499ab390f159e5bf85 && echo -e '\\n✅ Horae installed successfully! Press Enter to close this window.' || (echo -e '\\n❌ Installation failed. Please check your Rust environment.'; read -n 1 -s -r -p 'Press any key to close...'); read dummy"
                     var fullCmd = "omarchy-launch-tui bash -c " + shellArg(script)
                     root.bar.run(fullCmd)
                   }
@@ -1451,7 +1451,7 @@ BarWidget {
                   PlainText {
                     width: parent.width - copyBtn.width - Style.space(10)
                     anchors.verticalCenter: parent.verticalCenter
-                    text: "cargo install --git https://github.com/zhaohang1205/horae.git --rev e027536daeea14265e539e68336c6261e8dbaa15"
+                    text: "cargo install --git https://github.com/zhaohang1205/horae.git --rev b6a88f7fdfd9009738665b499ab390f159e5bf85"
                     color: root.dim
                     font.pixelSize: Style.font.caption
                     font.family: root.fontFamily
@@ -1467,7 +1467,7 @@ BarWidget {
                     fontSize: Style.font.caption
                     horizontalPadding: Style.space(6)
                     onClicked: {
-                      Quickshell.execDetached(["wl-copy", "cargo install --git https://github.com/zhaohang1205/horae.git --rev e027536daeea14265e539e68336c6261e8dbaa15"])
+                      Quickshell.execDetached(["wl-copy", "cargo install --git https://github.com/zhaohang1205/horae.git --rev b6a88f7fdfd9009738665b499ab390f159e5bf85"])
                       root.commandCopied = true
                       copyFeedbackTimer.restart()
                     }

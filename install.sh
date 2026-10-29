@@ -11,7 +11,7 @@ echo "==> Installing Horae for Omarchy Shell..."
 # Check if horae is installed
 if ! command -v horae >/dev/null 2>&1 && [[ ! -f "$HOME/.cargo/bin/horae" && ! -f "$HOME/.local/bin/horae" ]]; then
   echo "⚠️  Horae CLI not found. Please install it first:"
-  echo "    cargo install --git https://github.com/zhaohang1205/horae.git --rev e027536daeea14265e539e68336c6261e8dbaa15"
+  echo "    cargo install --git https://github.com/zhaohang1205/horae.git --rev b6a88f7fdfd9009738665b499ab390f159e5bf85"
 fi
 
 # Ensure private data and configuration directory with restricted permissions (0700)
